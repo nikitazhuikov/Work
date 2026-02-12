@@ -1,3 +1,6 @@
+DECLARE @Period int = 1003
+DECLARE @God int = 1016
+
 SELECT
     ROW_NUMBER() OVER (ORDER BY t.Порядок_для_отчета) AS Номер,
     t.Name AS Регион,
